@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+此檔案是由您 Web 專案的發行/封裝處理程序所使用。您可以編輯此 MSBuild 檔案，
+以自訂此處理程序的行為。若要深入了解，請造訪 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\zongu\temp</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Format.dll">
+      <publishTime>12/14/2016 11:35:21</publishTime>
+    </File>
+    <File Include="bin/Format.pdb">
+      <publishTime>12/13/2016 17:33:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>12/13/2016 17:12:51</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>12/13/2016 17:12:51</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>12/13/2016 17:12:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>12/13/2016 17:12:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>12/13/2016 17:12:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>12/13/2016 17:12:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>12/13/2016 17:12:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>12/13/2016 17:12:51</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Net.Http.Formatting.resources.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Net.Http.resources.dll">
+      <publishTime>12/13/2016 17:12:53</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Net.Http.WebRequest.resources.dll">
+      <publishTime>12/13/2016 17:12:53</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Web.Helpers.resources.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Web.Http.resources.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Web.Http.WebHost.resources.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Web.Mvc.resources.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Web.Razor.resources.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Web.WebPages.resources.dll">
+      <publishTime>12/13/2016 17:12:52</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>12/13/2016 17:23:33</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>12/13/2016 17:23:33</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>12/13/2016 17:23:33</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>12/13/2016 17:23:33</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>12/13/2016 17:23:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>12/13/2016 17:23:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>12/13/2016 17:23:33</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>12/13/2016 17:23:33</publishTime>
+    </File>
+    <File Include="Content/css/style.css">
+      <publishTime>12/13/2016 17:23:48</publishTime>
+    </File>
+    <File Include="Content/img/about_bg.jpg">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/card_bg.jpg">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/close.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/contact_bg.jpg">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/gototop.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/icon_art.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/icon_fb.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/icon_it.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/icon_line.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/icon_mail.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/icon_phone.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/icon_web.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/logo.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/logo_footer.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/next.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/phone.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/shadow.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/title01.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/title02.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/title03.png">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/top_bg01.jpg">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/top_bg02.jpg">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/img/top_bg03.jpg">
+      <publishTime>12/13/2016 17:24:01</publishTime>
+    </File>
+    <File Include="Content/NotoSansCJKtc-Thin.otf">
+      <publishTime>12/13/2016 17:23:34</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>12/13/2016 17:23:34</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/13/2016 17:12:41</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/13/2016 17:12:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>12/13/2016 17:24:12</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>12/13/2016 17:24:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.js">
+      <publishTime>12/13/2016 17:24:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.js">
+      <publishTime>12/13/2016 17:24:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.map">
+      <publishTime>12/13/2016 17:24:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.js">
+      <publishTime>12/13/2016 17:24:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.js">
+      <publishTime>12/13/2016 17:24:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.map">
+      <publishTime>12/13/2016 17:24:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.aniview.min.js">
+      <publishTime>12/13/2016 17:24:12</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>12/13/2016 17:24:12</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>12/13/2016 17:25:50</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>12/13/2016 17:28:16</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>12/13/2016 17:12:41</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>12/13/2016 17:19:26</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/14/2016 11:35:22</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

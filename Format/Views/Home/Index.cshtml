@@ -1,0 +1,319 @@
+﻿@section head{
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
+    <link href="~/Content/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/jquery.aniview.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("a").click(function () {
+                console.log($(this).attr("href"))
+
+                var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+
+                $body.animate({
+                    scrollTop: $($(this).attr("href")).offset().top + "px"
+                }, {
+                    duration: 500,
+                    easing: "swing"
+                });
+
+                return false;
+            });
+
+            $("#about").click(function () {
+                $(".about_bg").css('display', 'block');
+                $(".about_bg").animate({ marginBottom: '130px' });
+                $(".contact_bg").css('margin-bottom', '-220px');
+                $(".contact_bg").fadeOut();
+            });
+
+            $("#contact").click(function () {
+                $(".contact_bg").css('display', 'block');
+                $(".contact_bg").animate({ marginBottom: '130px' });
+                $(".about_bg").css('margin-bottom', '-220px');
+                $(".about_bg").fadeOut();
+            });
+
+            $(".about_close").click(function () {
+                $(".about_bg").animate({ marginBottom: '-220px' });
+                $(".about_bg").fadeOut();
+            });
+
+            $(".contact_close").click(function () {
+                $(".contact_bg").animate({ marginBottom: '-220px' });
+                $(".contact_bg").fadeOut();
+            });
+
+            $(".web_list").click(function () {
+                setTimeout(function () { $("#web").fadeIn(); }, 200);
+                $("#it , #art").fadeOut();
+            });
+
+            $(".art_list").click(function () {
+                setTimeout(function () { $("#art").fadeIn(); }, 200);
+                $("#web , #it").fadeOut();
+            });
+
+            $(".it_list").click(function () {
+                setTimeout(function () { $("#it").fadeIn(); }, 200);
+                $("#web , #art").fadeOut();
+            });
+        });
+
+        function next() {
+            $(".next img").animate({ opacity: "0.5" }, 700).animate({ opacity: "1" }, 700);
+            setTimeout(next, 1400);
+        }
+
+        next();
+
+        var options = {
+            animateThreshold: 100,
+            scrollPollInterval: 50
+        }
+
+        $('.aniview').AniView(options);
+
+        // 送出前檢查
+        var check = function () {
+
+            if (reg.name.value == undefined || reg.name.value == '') {
+                alert('請輸入姓名');
+                return;
+            }
+            if (reg.mail.value == undefined || reg.mail.value == '') {
+                alert('請輸入信箱');
+                return;
+            }
+            if (reg.mail.value.search(/^[^\s]+@@[^\s]+\.[^\s]{2,3}$/) == -1) {
+                alert("Email格式不正確");
+                return;
+            }
+            if (reg.tel.value == undefined || reg.tel.value == '') {
+                alert('請輸入電話');
+                return;
+            }
+            if (reg.tel.value.length < 9 || reg.tel.value.length > 10) {
+                alert('請檢查電話長度');
+                return;
+            }
+
+            reg.submit();
+        }
+
+    </script>
+
+}
+<div class="content01" id="content01">
+    <div class="next aniview" av-animation="fadeIn">
+        <a href="#content02"><img src="~/Content/img/next.png"></a>
+    </div>
+    <div class="logo aniview" av-animation="fadeInDown">
+        <img src="~/Content/img/logo.png">
+    </div>
+    <div class="content01_title aniview" av-animation="flipInX">
+        <img src="~/Content/img/title01.png">
+    </div>
+    <div class="content01_detile aniview" av-animation="flipInX">
+        80%的網頁使用者，平均停留一個頁面3~10秒鐘，<br />
+        在最短的時間內吸引使用者的目光，是最關鍵的開始！
+    </div>
+</div>
+<div class="content02" id="content02">
+    <div class="next aniview" av-animation="flipInX">
+        <a href="#content03"><img src="~/Content/img/next.png"></a>
+    </div>
+    <div class="content02_detile aniview" av-animation="flipInX">
+        <img src="~/Content/img/title02.png" style="margin-bottom: 30px;">
+        <p>
+            認真聆聽您的訴求；<br>
+            了解每個不同的產業；<br>
+            規劃精準，打造屬於您的心目中的網站
+        </p>
+    </div>
+</div>
+<div class="content03" id="content03">
+    <div class="next aniview" av-animation="fadeIn">
+        <a href="#content01"><img src="~/Content/img/gototop.png"></a>
+    </div>
+    <div class="content03_left">
+        <img src="~/Content/img/title03.png" style="margin-bottom: 30px;" class="aniview" av-animation="rotateInDownLeft">
+        <p class="aniview" av-animation="rotateInDownLeft">
+            現代人手機使用率是電腦的3倍以上，<br>
+            少了手機版網頁，你將失去60%以上的客戶。<br>
+            響應式網頁特色是只需要一個網頁，<br>
+            即可自動響應各種不同尺寸的瀏覽設備，<br>
+            如:電腦、筆電、平板及手機等等。<br>
+            讓客戶隨時隨地輕鬆下單！
+        </p>
+    </div>
+    <div class="content03_right">
+        <img src="~/Content/img/phone.png" class="aniview" av-animation="rotateInDownLeft">
+    </div>
+</div>
+<div class="shadow"><img src="~/Content/img/shadow.png"></div>
+<div class="about_bg">
+    <div class="about">
+        <div class="about_close"><img src="~/Content/img/close.png"></div>
+        <div class="about_title">
+            關於我們
+        </div>
+        <div class="about_content">
+            <p>
+                FOTMAT 多媒體設計團隊<br>
+                用心聆聽、細心了解、創新打造，是我們服務的主旨，
+                我們明白每種作法的可能性，誠心傾聽每位客戶的想法
+                ，借助我們每隻專業的雙手，打破傳統的思維，追求揮
+                別以往的市場機會，歡迎攜手合作！
+            </p>
+        </div>
+        <div class="about_title" style="margin-top:30px;">
+            服務項目
+        </div>
+        <div class="about_content">
+            <p>網頁設計 原畫插畫設計 APP設計 遊戲場景 ui設計商業/藝術攝影 WebForm winForm OS排程</p>
+        </div>
+    </div>
+</div>
+<div class="contact_bg">
+    <div class="contact">
+        <div class="contact_close"><img src="~/Content/img/close.png"></div>
+        <div class="send_mail">
+            <div class="contact_title">聯繫我們</div>
+            <div class="contact_legend">如有任何問題，相關聯絡事宜，歡迎與我們連絡。</div>
+            <form action="@Url.Action("Index")" name="reg" method="post" enctype="multipart/form-data">
+                <div class="contact_left">
+
+                    <div class="contact_list">
+                        您的姓名(需填寫)
+                    </div>
+                    <div class="contact_input">
+                        <input type="text" name="name" value="" class="contact_put" aria-required="true" aria-invalid="false">
+                    </div>
+                    <div class="contact_list">
+                        您的電子郵件(需填寫)
+                    </div>
+                    <div class="contact_input">
+                        <input type="text" name="mail" value="" class="contact_put" aria-required="true" aria-invalid="false">
+                    </div>
+                    <div class="contact_list">
+                        您的電話(需填寫)
+                    </div>
+                    <div class="contact_input">
+                        <input type="text" name="tel" value="" class="contact_put" aria-required="true" aria-invalid="false">
+                    </div>
+                </div>
+                <div class="contact_right">
+                    <div class="contact_list">
+                        您的信件內容
+                    </div>
+                    <div class="contact_input">
+                        <textarea name="message" cols="40" rows="10" class="contact_text" aria-invalid="false"></textarea>
+                    </div>
+                </div>
+                <div class="contact_ok">
+                    <input type="button" value="傳送" class="contact_submit" onclick="check();">
+                </div>
+            </form>
+        </div>
+        <div class="card" id="web">
+            <div class="card_title_icon">
+                <img src="~/Content/img/icon_web.png">
+            </div>
+            <div class="card_title"><span>劉智堯(小李)</span>網頁設計師</div>
+            <div class="cord_row">
+                <div class="cord_list">
+                    <img src="~/Content/img/icon_phone.png"><span>0982-011255</span>
+                </div>
+                <div class="cord_list2">
+                    <img src="~/Content/img/icon_mail.png"><span>lilyao313@gmail.com</span>
+                </div>
+            </div>
+            <div class="cord_row">
+                <div class="cord_list">
+                    <img src="~/Content/img/icon_line.png"><span>Line : tuplc3</span>
+                </div>
+                <div class="cord_list2">
+                    <img src="~/Content/img/icon_fb.png"><span>facebook.com/tuplc3</span>
+                </div>
+            </div>
+            <div class="card_select">
+                <li class="web_list" style="background:#e86940;">
+                    網頁設計師
+                </li>
+                <li class="art_list">
+                    原畫設計師
+                </li>
+                <li class="it_list">
+                    工程師
+                </li>
+            </div>
+        </div>
+        <div class="card" id="art" style="display:none;">
+            <div class="card_title_icon">
+                <img src="~/Content/img/icon_art.png">
+            </div>
+            <div class="card_title"><span>魏上又</span>原畫設計師</div>
+            <div class="cord_row">
+                <div class="cord_list">
+                    <img src="~/Content/img/icon_phone.png"><span>0983-652837</span>
+                </div>
+                <div class="cord_list2">
+                    <img src="~/Content/img/icon_mail.png"><span>sunyo0328@gmail.com</span>
+                </div>
+            </div>
+            <div class="cord_row">
+                <div class="cord_list" style="width:160px; margin-right:18px;">
+                    <img src="~/Content/img/icon_line.png"><span>Line : sunyo328</span>
+                </div>
+                <div class="cord_list2">
+                    <img src="~/Content/img/icon_fb.png"><span>facebook.com/sunyo.wei</span>
+                </div>
+            </div>
+            <div class="card_select">
+                <li class="web_list">
+                    網頁設計師
+                </li>
+                <li class="art_list" style="background:#e86940;">
+                    原畫設計師
+                </li>
+                <li class="it_list">
+                    工程師
+                </li>
+            </div>
+        </div>
+        <div class="card" id="it" style="display:none;">
+            <div class="card_title_icon">
+                <img src="~/Content/img/icon_it.png">
+            </div>
+            <div class="card_title"><span>何宗瑜(Carter)</span>工程師</div>
+            <div class="cord_row">
+                <div class="cord_list">
+                    <img src="~/Content/img/icon_phone.png"><span>0912-366065</span>
+                </div>
+                <div class="cord_list2">
+                    <img src="~/Content/img/icon_mail.png"><span>zongu3317@gmail.com</span>
+                </div>
+            </div>
+            <div class="cord_row">
+                <div class="cord_list" style="width:160px; margin-right:18px;">
+                    <img src="~/Content/img/icon_line.png"><span>Line : zongu</span>
+                </div>
+                <div class="cord_list2">
+                    <img src="~/Content/img/icon_fb.png"><span>a33178583@yahoo.com.tw</span>
+                </div>
+            </div>
+            <div class="card_select">
+                <li class="web_list">
+                    網頁設計師
+                </li>
+                <li class="art_list">
+                    原畫設計師
+                </li>
+                <li class="it_list" style="background:#e86940;">
+                    工程師
+                </li>
+            </div>
+        </div>
+    </div>
+</div>
